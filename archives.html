@@ -1,129 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-        <title>John Trinh</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta charset="utf-8" />
-        <!-- twitter card metadata -->
-        <!-- OG Tags -->
-        <!-- favicon -->
-        <!-- moment.js for date formatting -->
-        <script src="./theme/js/moment.js"></script>
-        <!-- css -->
-        <link rel="stylesheet" type="text/css" href="./theme/css/main.css" />
-		<script>
-			
-                /*! grunt-grunticon Stylesheet Loader - v2.1.2 | https://github.com/filamentgroup/grunticon | (c) 2015 Scott Jehl, Filament Group, Inc. | MIT license. */
-    
-    (function(e){function t(t,n,r,o){"use strict";function a(){for(var e,n=0;u.length>n;n++)u[n].href&&u[n].href.indexOf(t)>-1&&(e=!0);e?i.media=r||"all":setTimeout(a)}var i=e.document.createElement("link"),l=n||e.document.getElementsByTagName("script")[0],u=e.document.styleSheets;return i.rel="stylesheet",i.href=t,i.media="only x",i.onload=o||null,l.parentNode.insertBefore(i,l),a(),i}var n=function(r,o){"use strict";if(r&&3===r.length){var a=e.navigator,i=e.Image,l=!(!document.createElementNS||!document.createElementNS("http://www.w3.org/2000/svg","svg").createSVGRect||!document.implementation.hasFeature("http://www.w3.org/TR/SVG11/feature#Image","1.1")||e.opera&&-1===a.userAgent.indexOf("Chrome")||-1!==a.userAgent.indexOf("Series40")),u=new i;u.onerror=function(){n.method="png",n.href=r[2],t(r[2])},u.onload=function(){var e=1===u.width&&1===u.height,a=r[e&&l?0:e?1:2];n.method=e&&l?"svg":e?"datapng":"png",n.href=a,t(a,null,null,o)},u.src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==",document.documentElement.className+=" grunticon"}};n.loadCSS=t,e.grunticon=n})(this);(function(e,t){"use strict";var n=t.document,r="grunticon:",o=function(e){if(n.attachEvent?"complete"===n.readyState:"loading"!==n.readyState)e();else{var t=!1;n.addEventListener("readystatechange",function(){t||(t=!0,e())},!1)}},a=function(e){return t.document.querySelector('link[href$="'+e+'"]')},c=function(e){var t,n,o,a,c,i,u={};if(t=e.sheet,!t)return u;n=t.cssRules?t.cssRules:t.rules;for(var l=0;n.length>l;l++)o=n[l].cssText,a=r+n[l].selectorText,c=o.split(");")[0].match(/US\-ASCII\,([^"']+)/),c&&c[1]&&(i=decodeURIComponent(c[1]),u[a]=i);return u},i=function(e){var t,o,a;o="data-grunticon-embed";for(var c in e)if(a=c.slice(r.length),t=n.querySelectorAll(a+"["+o+"]"),t.length)for(var i=0;t.length>i;i++)t[i].innerHTML=e[c],t[i].style.backgroundImage="none",t[i].removeAttribute(o);return t},u=function(t){"svg"===e.method&&o(function(){i(c(a(e.href))),"function"==typeof t&&t()})};e.embedIcons=i,e.getCSS=a,e.getIcons=c,e.ready=o,e.svgLoadedCallback=u,e.embedSVG=u})(grunticon,this);
-                
-                grunticon(["./theme/css/icons.data.svg.css", "./theme/css/icons.data.png.css", "./theme/css/icons.fallback.css"]);
-            </script>
-        <noscript><link href="./theme/css/icons.fallback.css" rel="stylesheet"></noscript>
-        <!-- menu toggle javascript -->
-        <script type="text/javascript">
-            document.addEventListener("DOMContentLoaded", initMenu);
-            
-            function initMenu(){
-                var menu = document.getElementById("menu");
-                var menulink = document.getElementById("menu-link");
-                menulink.addEventListener("click", function toggleMenu(){
-                        window.event.preventDefault();
-                        menulink.classList.toggle('active');
-                        menu.classList.toggle('active');              
-                    });
-            };
-        </script>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>John Trinh - Archives</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css"/>
+        <link rel="stylesheet"
+              href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab|Ruda"/>
+        <link rel="stylesheet" type="text/css" href="./theme/css/main.css"/>
+            <link href="https://johntrinh.net/
+feeds/all.atom.xml"
+                  type="application/atom+xml" rel="alternate" title="John Trinh Atom Feed"/>
 </head>
 <body>
-    <div role="banner" id="masthead">
-        <header>
-            <a href="/"><img src="./images/eye.png" alt="McManus Logo"></a>
-            <a href="#menu" id="menu-link">more stuff</a>
-            <nav id="menu">
-                <ul>
-                        <li><a href="./pages/about.html">about</a></li>
-                        <li><a href="/tags">tags</a></li>
-                            <li><a href="./category/economics.html">economics</a></li>
-                            <li><a href="./category/reading-list.html">reading list</a></li>
-                </ul>
-            </nav>
-        </header>
-    </div>
-        <div class="page" role="main">
-<div class="page-title">
-        <h1>archives</h1>
-    </div>
-<div class="articles">
-    <ol>
-        <li>
-            <article>
-                <footer>
-                        <p>
-                        <time datetime="2016-09-14 00:00:00-07:00">
-                            <script>document.write(moment('2016-09-14 00:00:00-07:00').format('LL'));</script>
-                        </time>
-                                in <a href="./category/economics.html"><span class="category-tag">economics</span></a>
-                    </p>
-                </footer>
-                <header>
-                    <a href="./how-automation-technology-affects-job-markets.html">
-                        <h2>How Automation Technology Affects Job Markets</h2>
-                    </a>
-                </header>
-                <div class="summary"><p>A summary of automation from both the technologists' and econoomists' view</p> </div>
-                <div class="tags">
-                    <ul class="tags">
-                        <li><a href="./tag/economics.html" class="tag">economics</a></li>
-                        <li><a href="./tag/automation.html" class="tag">automation</a></li>
-                        <li><a href="./tag/labor.html" class="tag">labor</a></li>
-                        <li><a href="./tag/academic.html" class="tag">academic</a></li>
-                    </ul>
-                </div>
-                <a href="./how-automation-technology-affects-job-markets.html">
-                    <p class="readmore">Read more...</p>
-                </a>
-            </article>
-        </li>
-        <li>
-            <article>
-                <footer>
-                        <p>
-                        <time datetime="2015-02-20 00:00:00-08:00">
-                            <script>document.write(moment('2015-02-20 00:00:00-08:00').format('LL'));</script>
-                        </time>
-                                in <a href="./category/reading-list.html"><span class="category-tag">reading list</span></a>
-                    </p>
-                </footer>
-                <header>
-                    <a href="./four-books-every-engineer-should-read.html">
-                        <h2>Four Books Every Engineer Should Read</h2>
-                    </a>
-                </header>
-                <div class="summary"><p>A short list of books for engineers, students, and history nerds.</p> </div>
-                <div class="tags">
-                    <ul class="tags">
-                        <li><a href="./tag/engineering.html" class="tag">engineering</a></li>
-                        <li><a href="./tag/books.html" class="tag">books</a></li>
-                    </ul>
-                </div>
-                <a href="./four-books-every-engineer-should-read.html">
-                    <p class="readmore">Read more...</p>
-                </a>
-            </article>
-        </li>
-    </ol>
+<a href="https://github.com/" class="github-corner" aria-label="View source on GitHub">
+    <svg width="80" height="80" viewBox="0 0 250 250"
+         style="fill:#8B8B7A; color:#fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true">
+        <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+        <path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+              fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+        <path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+              fill="currentColor" class="octo-body"></path>
+    </svg>
+</a>
+<style>.github-corner:hover .octo-arm {
+    animation: octocat-wave 560ms ease-in-out
+}
+@keyframes octocat-wave {
+    0%, 100% {
+        transform: rotate(0)
+    }
+    20%, 60% {
+        transform: rotate(-25deg)
+    }
+    40%, 80% {
+        transform: rotate(10deg)
+    }
+}
+@media (max-width: 500px) {
+    .github-corner:hover .octo-arm {
+        animation: none
+    }
+
+    .github-corner .octo-arm {
+        animation: octocat-wave 560ms ease-in-out
+    }
+}</style><div id="container">
+    <header>
+        <h1><a href="./">John Trinh</a></h1>
+            <ul class="social-media">
+                    <li><a href="https://www.linkedin.com/in/jtrinh/"><i class="fa fa-Linkedin fa-lg" aria-hidden="true"></i></a></li>
+                    <li><a href="https://johntrinh.net/
+feeds/all.atom.xml"
+                           type="application/atom+xml" rel="alternate"><i class="fa fa-rss fa-lg"
+                                                                          aria-hidden="true"></i></a></li>
+            </ul>
+        <p><em>A personal blog</em></p>
+    </header>
+    <nav>
+        <ul>
+                    <li><a href="./category/infosec.html"> infosec </a></li>
+                    <li><a href="./category/reading-list.html"> reading list </a></li>
+                    <li><a href="./pages/about.html">About Me</a>
+                    </li>
+        </ul>
+    </nav>
+    <main>
+        <section id="list">
+            <h2>Archives for John Trinh</h2>
+            <ul>
+                    <li><a href="./5-apps-to-improve-your-security-and-privacy-in-2019.html">5 Apps to Improve Your Security & Privacy in 2019 (Updated for 2020)</a>
+                        <time>Jun 2019</time>
+                    </li>
+                    <li><a href="./four-books-every-engineer-should-read.html">Four Books Every Engineer Should Read</a>
+                        <time>Feb 2015</time>
+                    </li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <h6>
+            Copyright &copy 2018
+- John Trinh | Rendered by <a href="http://getpelican.com/">Pelican</a> |
+            Powered by <a href="http://python.org">Python</a>
+        </h6>
+    </footer>
 </div>
-                <footer>
-                    <div class="icons">
-                        <a href="https://twitter.com/johntrinh" target="_blank"><div class="icon-twitter icon"></div></a>
-                        <a href="https://github.com/specifics" target="_blank"><div class="icon-github icon"></div></a>
-                    </div>
-                    <p>© <script>document.write(moment().format('YYYY'));</script> John Trinh</p>
- 
-                    <p><i>"Brutal"</i> Pelican Theme</p>
-                    <p>Designed and built by <a href="http://twitter.com/mcman_s">@mcman_s</a> in Denver</p>
-                </footer>
-        </div>
 </body>
 </html>
